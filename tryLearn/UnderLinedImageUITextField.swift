@@ -10,26 +10,10 @@ import UIKit
 
 class UnderLinedImageUITextField: UITextField {
     
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setUnderLine()
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        border.frame = CGRect(x: 0, y: self.frame.size.height - borderWidth, width:  self.frame.size.width-10, height: 1.0)
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setUnderLine()
-    }
-    override func prepareForInterfaceBuilder() {
-        setUnderLine()
-    }
-    
-    //
-    override func awakeFromNib() {
-              super.awakeFromNib()
-          setUnderLine()
-
-          }
           
     
     @IBInspectable var leftImage: UIImage? {
@@ -54,16 +38,16 @@ class UnderLinedImageUITextField: UITextField {
            }
          }
 
-    func setUnderLine(){
+    private lazy var border: CALayer = {
         let border = CALayer()
-        let width = CGFloat(1)
         border.borderColor = UIColor.white.cgColor
-        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width-10, height: 1.0)
-        border.borderWidth = width
+        border.borderWidth = borderWidth
         self.layer.addSublayer(border)
         self.layer.masksToBounds = true
-        
-    }
+        return border
+    }()
+    private var borderWidth: CGFloat { 1 }
+    
     func updateView() {
         if let image = leftImage {
             leftViewMode = UITextField.ViewMode.always
