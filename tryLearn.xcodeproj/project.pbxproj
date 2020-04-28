@@ -13,6 +13,8 @@
 		E3B313692456551A00EE5868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B313672456551A00EE5868 /* Main.storyboard */; };
 		E3B3136B2456551F00EE5868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B3136A2456551F00EE5868 /* Assets.xcassets */; };
 		E3B3136E2456551F00EE5868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B3136C2456551F00EE5868 /* LaunchScreen.storyboard */; };
+		E3B3137624567FB200EE5868 /* HSUnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B3137524567FB200EE5868 /* HSUnderLineTextField.swift */; };
+		E3B313782456A29600EE5868 /* UnderLinedImageUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B313772456A29600EE5868 /* UnderLinedImageUITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E3B3136A2456551F00EE5868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3B3136D2456551F00EE5868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3B3136F2456551F00EE5868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B3137524567FB200EE5868 /* HSUnderLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSUnderLineTextField.swift; sourceTree = "<group>"; };
+		E3B313772456A29600EE5868 /* UnderLinedImageUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLinedImageUITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E3B3136A2456551F00EE5868 /* Assets.xcassets */,
 				E3B3136C2456551F00EE5868 /* LaunchScreen.storyboard */,
 				E3B3136F2456551F00EE5868 /* Info.plist */,
+				E3B3137524567FB200EE5868 /* HSUnderLineTextField.swift */,
+				E3B313772456A29600EE5868 /* UnderLinedImageUITextField.swift */,
 			);
 			path = tryLearn;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				E3B313662456551A00EE5868 /* ViewController.swift in Sources */,
 				E3B313622456551A00EE5868 /* AppDelegate.swift in Sources */,
+				E3B313782456A29600EE5868 /* UnderLinedImageUITextField.swift in Sources */,
 				E3B313642456551A00EE5868 /* SceneDelegate.swift in Sources */,
+				E3B3137624567FB200EE5868 /* HSUnderLineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
